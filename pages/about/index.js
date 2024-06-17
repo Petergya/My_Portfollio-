@@ -132,7 +132,7 @@ const About = () => {
 
   return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left ">
-      <Circles />
+      {/* <Circles /> */}
       <motion.div
         variants={fadeIn("right", 0.2)}
         initial="hidden"

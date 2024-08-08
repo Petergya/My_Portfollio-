@@ -3,10 +3,7 @@ import Link from "next/link";
 import { RiYoutubeLine, 
   RiInstagramLine, 
   RiFacebookLine,
-  RiDribbbleLine,
-  RiBehanceLine,
-  RiPinterestLine,
-  RiYuqueLine,
+ 
   RiLinkedinLine,
   RiGithubLine,
   RiTwitterLine, 
@@ -37,9 +34,7 @@ const Socials = () => {
         <RiYoutubeLine />
       </Link>
       
-      {/* <Link href={""} className="hover:text-accent transition-all duration-300">
-        <RiYuqueLine />
-      </Link> */}
+     
      
     </div>
   )

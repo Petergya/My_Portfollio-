@@ -161,7 +161,7 @@ const About = () => {
            exit="hidden"
           className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 "
           >
-            3 Years ago i began freelance as a developer. since then, I've done
+            3 Years ago i began freelance as a developer. since then, I&apos;ve done
               reomte work for a startups and collaborated on digital products for 
               business and consumer use.
           </ motion.p>

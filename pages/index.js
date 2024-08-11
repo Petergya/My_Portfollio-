@@ -23,7 +23,7 @@ const Home = () => {
     initial="hidden"
      animate="show"
      exit="hidden"
-    className="h1 mt-24"
+    className="h1 "
     >
       Transforming Ideas <br /> Into <span className="text-accent">Digital Reality</span>
     </motion.h1>
@@ -34,9 +34,8 @@ const Home = () => {
      exit="hidden"
      className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
      >
-   Turning ideas into digital reality involves brainstorming, design, coding, 
-   and deployment, using digital tools to transform concepts into practical 
-   solutions that shape the digital landscape with creativity.
+   Turning ideas into digital reality involves transforming concepts 
+   into practical solutions through brainstorming, design, coding, and creative deployment.
     </motion.p>
     <div className="flex justify-center xl:hidden relative">
     <ProjectsBtn />

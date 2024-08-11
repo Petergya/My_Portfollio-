@@ -34,10 +34,9 @@ const Home = () => {
      exit="hidden"
      className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
      >
-    Converting ideas into digital reality is a journey blending innovation and technology. 
-    From inception to execution, it encompasses brainstorming, design, coding, and deployment. 
-    This process harnesses digital tools and platforms to materialize concepts into functional solutions,
-     shaping the digital landscape with creativity and practicality.
+   Turning ideas into digital reality involves brainstorming, design, coding, 
+   and deployment, using digital tools to transform concepts into practical 
+   solutions that shape the digital landscape with creativity.
     </motion.p>
     <div className="flex justify-center xl:hidden relative">
     <ProjectsBtn />

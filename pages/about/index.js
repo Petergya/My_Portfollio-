@@ -1,21 +1,10 @@
-
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaMobileAlt
-} from "react-icons/fa";
-import {
-  SiNextdotjs,
-  SiFramer,
-  SiReact,
-} from "react-icons/si";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaMobileAlt } from "react-icons/fa";
+import { SiNextdotjs, SiFramer, SiReact } from "react-icons/si";
 import CountUp from "react-countup";
 
 const aboutData = [
@@ -36,11 +25,8 @@ const aboutData = [
       },
       {
         title: "Mobile App",
-        icons: [
-          <FaMobileAlt key="mobile-app" />,
-        ],
+        icons: [<FaMobileAlt key="mobile-app" />],
       },
-     
     ],
   },
   {
@@ -96,8 +82,6 @@ const aboutData = [
   },
 ];
 
-
-
 const About = () => {
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [skillsSelected, setSkillsSelected] = useState(false);
@@ -147,67 +131,86 @@ const About = () => {
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text */}
         <div className="flex-1 flex flex-col justify-center">
-          < motion.h4 className="h4 mt-8"
-           variants={fadeIn("right", 0.2)}
-           initial="hidden"
-           animate="show"
-           exit="hidden">
-            Crafted <span className="text-accent">stories</span>inspire stunning designs.
-            </ motion.h4>
-          <motion.p 
-           variants={fadeIn("right", 0.4)}
-           initial="hidden"
-           animate="show"
-           exit="hidden"
-          className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 "
+          <motion.h2
+            className="h2 mt-8"
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
           >
-            {/* 3 Years ago i began freelance as a developer. since then, I&apos;ve done
-              reomte work for a startups and collaborated on digital products for 
-              business and consumer use. */}
-              Three years ago, I began freelancing as a developer, 
-              working remotely on startups and digital products.
-          </ motion.p>
+            Crafted <span className="text-accent">stories</span>inspire stunning
+            designs.
+          </motion.h2>
+          <motion.p
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 "
+          >
+            Started freelancing as a developer, working  on startups and
+            products.
+          </motion.p>
           {/* counter */}
-          
+
           <motion.div
-           variants={fadeIn("right", 0.6)}
-           initial="hidden"
-           animate="show"
-           exit="hidden" 
-          className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto
-          xl:mx-0 mb-8" >
-            <div className="flex flex-1 xl:gap-x-6" >
+            variants={fadeIn("right", 0.6)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto
+          xl:mx-0 mb-8"
+          >
+            <div className="flex flex-1 xl:gap-x-6">
               {/* experience */}
-              <div className="relative flex-1 after:w-[1px] after:h-full
-              after:bg-white/10 after:absolute after:top-0 after:right-0">
-              <div className="text-2xl xl:text-4xl font-extrabold text-accent bm-2">
-                <CountUp start={0} end={4} duration={5} /> +
+              <div
+                className="relative flex-1 after:w-[1px] after:h-full
+              after:bg-white/10 after:absolute after:top-0 after:right-0"
+              >
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent bm-2">
+                  <CountUp start={0} end={4} duration={5} /> +
+                </div>
+                <div
+                  className="text-xs uppercase tracking-[1px] leading-[1.4]
+              max-w-[100px]"
+                >
+                  Years of experience
+                </div>
               </div>
-              <div className="text-xs uppercase tracking-[1px] leading-[1.4]
-              max-w-[100px]">Years of experience</div>
-              </div>
-            
-            <div className="relative flex-1 after:w-[1px] after:h-full
-              after:bg-white/10 after:absolute after:top-0 after:right-0">
+
+              <div
+                className="relative flex-1 after:w-[1px] after:h-full
+              after:bg-white/10 after:absolute after:top-0 after:right-0"
+              >
                 {/* clients */}
-              <div className="text-2xl xl:text-4xl font-extrabold text-accent bm-2">
-                <CountUp start={0} end={100} duration={5} /> +
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent bm-2">
+                  <CountUp start={0} end={100} duration={5} /> +
+                </div>
+                <div
+                  className="text-xs uppercase tracking-[1px] leading-[1.4]
+              max-w-[100px]"
+                >
+                  Satified clients
+                </div>
               </div>
-              <div className="text-xs uppercase tracking-[1px] leading-[1.4]
-              max-w-[100px]">Satified clients</div>
+              <div
+                className="relative flex-1 after:w-[1px] after:h-full
+              after:bg-white/10 after:absolute after:top-0 after:right-0"
+              >
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent bm-2">
+                  <CountUp start={0} end={10} duration={5} /> +
+                </div>
+                <div
+                  className="text-xs uppercase tracking-[1px] leading-[1.4]
+              max-w-[100px]"
+                >
+                  finished projects
+                </div>
               </div>
-              <div className="relative flex-1 after:w-[1px] after:h-full
-              after:bg-white/10 after:absolute after:top-0 after:right-0">
-              <div className="text-2xl xl:text-4xl font-extrabold text-accent bm-2">
-                <CountUp start={0} end={10} duration={5} /> +
-              </div>
-              <div className="text-xs uppercase tracking-[1px] leading-[1.4]
-              max-w-[100px]">finished projects</div>
-              </div>
-              </div>
+            </div>
           </motion.div>
-          </div>
-        
+        </div>
+
         {/* info */}
         <div className="flex flex-col w-full xl:max-w-[48%] h-[340px] ">
           <div className="flex gap-x-4 xl:gap-8 mx-auto xl:mx-0 mb-4">

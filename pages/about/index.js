@@ -152,7 +152,7 @@ const About = () => {
            initial="hidden"
            animate="show"
            exit="hidden">
-            Captivating <span className="text-accent">stories</span>birth magnificent designs.
+            Crafted <span className="text-accent">stories</span>inspire stunning designs.
             </ motion.h2>
           <motion.p 
            variants={fadeIn("right", 0.4)}

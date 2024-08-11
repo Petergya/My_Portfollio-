@@ -147,13 +147,13 @@ const About = () => {
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text */}
         <div className="flex-1 flex flex-col justify-center">
-          < motion.h2 className="h2 mt-8"
+          < motion.h4 className="h4 mt-8"
            variants={fadeIn("right", 0.2)}
            initial="hidden"
            animate="show"
            exit="hidden">
             Crafted <span className="text-accent">stories</span>inspire stunning designs.
-            </ motion.h2>
+            </ motion.h4>
           <motion.p 
            variants={fadeIn("right", 0.4)}
            initial="hidden"

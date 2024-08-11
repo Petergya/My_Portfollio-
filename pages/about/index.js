@@ -62,10 +62,7 @@ const aboutData = [
   {
     title: "credentials",
     info: [
-      {
-        title: "Web Development - Nhub Nigeria, Bluehouse Technology",
-        stage: "2021",
-      },
+     
       {
         title: "Front-end Developer",
         stage: "2022",
@@ -131,8 +128,8 @@ const About = () => {
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text */}
         <div className="flex-1 flex flex-col justify-center">
-          <motion.h3
-            className="h3 mt-8"
+          <motion.h2
+            className="h2 mt-8"
             variants={fadeIn("right", 0.2)}
             initial="hidden"
             animate="show"
@@ -140,7 +137,7 @@ const About = () => {
           >
             Crafted <span className="text-accent">stories</span>inspire stunning
             designs.
-          </motion.h3>
+          </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
             initial="hidden"
@@ -148,8 +145,8 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 "
           >
-            Started freelancing as a developer, working  on startups and
-            products.
+            {/* Started freelancing as a developer, working  on startups and
+            products. */}
           </motion.p>
           {/* counter */}
 

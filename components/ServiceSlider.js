@@ -1,4 +1,5 @@
 
+
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -93,23 +94,28 @@ const ServiceSlider = () => {
       <style jsx>{`
         .custom-pagination {
           position: relative;
-          bottom: 0px;
+          bottom: -16px;
           left: 50%;
           transform: translateX(-50%);
           width: 100%;
           display: flex;
           justify-content: center;
-          margin-top: 10px;
+          margin-top: px; /* Reduced space for larger screens */
           z-index: 10;
         }
         .swiper-pagination-bullet {
-          background: #fff;
+          background: var(--accent-color); /* Use accent color */
           width: 8px;
           height: 8px;
           margin: 0 3px;
         }
         .swiper-pagination-bullet-active {
-          background: #000;
+          background: var(--accent-color); /* Active dot color */
+        }
+        @media (min-width: 1024px) { /* Large screen breakpoint */
+          .custom-pagination {
+            top: -50px; /* Reduced space from the Swiper on larger screens */
+          }
         }
       `}</style>
     </>
@@ -117,3 +123,4 @@ const ServiceSlider = () => {
 };
 
 export default ServiceSlider;
+

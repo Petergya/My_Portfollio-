@@ -77,7 +77,7 @@ const TestimonialSlider = () => {
               xl:before:left-0 xl:before:h-[200px] relative xl:pl-20">
                 {/* Quote Icon */}
                 <div className="mb-4 ">
-                  <FaQuoteLeft className="text-4xl xl:text-6xl text-white/20 mx-auto md:mx-0 pl-2" />
+                  <FaQuoteLeft className="text-4xl xl:text-6xl text-white/20 mx-auto md:mx-0 pl-2 -mb-2" />
                 </div>
                 {/* Message */}
                 <div className="xl:text-lg text-center md:text-left -mb-2  ">

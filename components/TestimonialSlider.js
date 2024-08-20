@@ -45,15 +45,15 @@ const TestimonialSlider = () => {
           el: '.custom-pagination',
         }}
         modules={[Navigation, Pagination]}
-        className="h-[250px] sm:h-[300px]"
+        className="h-[250px] sm:h-[200px]"
       >
         {testimonialData.map((slide, slideIndex) => (
           <SwiperSlide key={slideIndex}>
             <div className="flex flex-col md:flex-row items-center gap-x-8 h-full px-16">
               {/* Avatar, Name, Position */}
               <div className='w-full max-w-[300px]  flex flex-col xl:justify-center items-center
-              relative mx-auto xl:mx-0'>
-                <div className="flex flex-col justify-center text-center">
+              relative mx-auto xl:mx-0 -mb-2 '>
+                <div className="flex flex-col justify-center text-center ">
                   {/* Avatar */}
                   <div className="mb-2 mx-auto">
                     <Image 
@@ -80,7 +80,7 @@ const TestimonialSlider = () => {
                   <FaQuoteLeft className="text-4xl xl:text-6xl text-white/20 mx-auto md:mx-0 pl-2" />
                 </div>
                 {/* Message */}
-                <div className="xl:text-lg text-center md:text-left mb-2  ">
+                <div className="xl:text-lg text-center md:text-left -mb-2  ">
                   {slide.message}
                 </div>
               </div>

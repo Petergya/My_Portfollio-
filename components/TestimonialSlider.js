@@ -45,7 +45,7 @@ const TestimonialSlider = () => {
           el: '.custom-pagination',
         }}
         modules={[Navigation, Pagination]}
-        className="h-[250px] sm:h-[300px] "
+        className="h-[250px] sm:h-[300px]"
       >
         {testimonialData.map((slide, slideIndex) => (
           <SwiperSlide key={slideIndex}>

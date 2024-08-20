@@ -7,6 +7,8 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import { BsArrowRight } from 'react-icons/bs';
 import Image from "next/image"; 
+ 
+
 
 const workSlides = [
   {
@@ -19,7 +21,7 @@ const workSlides = [
   },
   {
     images: [
-      { title: 'title5', path: '/thumb4.jpg', url: '/your-link5', projectName: 'Project 5' },
+      { title: 'title5', path: '/thumb4.jpg', url: 'https://www.marbstores.com/', projectName: 'Marb Stores' },
       { title: 'title6', path: '/thumb1.jpg', url: '/your-link6', projectName: 'Project 6' },
       { title: 'title7', path: '/thumb2.jpg', url: '/your-link7', projectName: 'Project 7' },
       { title: 'title8', path: '/thumb3.jpg', url: '/your-link8', projectName: 'Project 8' },

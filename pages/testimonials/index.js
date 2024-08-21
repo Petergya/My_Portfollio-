@@ -19,7 +19,7 @@ const Testimonials = () => {
 
         {/* slider */}
         <motion.div
-          variants={fadeIn("up", 0.4)}
+          variants={fadeIn("down", 0.2)}
           initial="hidden"
           animate="show"
           exit="hidden"

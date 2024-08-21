@@ -18,14 +18,14 @@ const Testimonials = () => {
         </motion.h2>
 
         {/* slider */}
-        <motion.div
-          variants={fadeIn("down", 0.2)}
+        <div
+          variants={fadeIn("up", 0.4)}
           initial="hidden"
           animate="show"
           exit="hidden"
         >
           <TestimonialSlider />
-        </motion.div>
+        </div>
       </div>
     </div>
   );

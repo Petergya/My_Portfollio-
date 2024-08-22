@@ -96,7 +96,7 @@ const Contact = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="flex-1 flex flex-col gap-6 w-full mx-auto"
+            className="flex-1 flex flex-col gap-2 w-full mx-auto"
             onSubmit={handleSubmit}
           >
             {/* input group */}
@@ -151,9 +151,9 @@ const Contact = () => {
                 className={`translate-y-[120%] opacity-0 group-hover:flex group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]`}
               />
             </button>
-            <div className="flex flex-col space-y-4">
+            <div className="flex flex-col ">
       {/* Phone */}
-      <div className="flex gap-x-8">
+      <div className="flex gap-x-8 ">
       <div className="flex items-center space-x-2">
         <TiPhone className="text-2xl text-accent" /> 
      

@@ -153,26 +153,24 @@ const Contact = () => {
             </button>
             <div className="flex flex-col ">
       {/* Phone */}
-      <div className="flex gap-x-8 ">
-      <div className="flex items-center space-x-2">
-        <TiPhone className="text-2xl text-accent" /> 
-     
-        <span className="text-white">
-                  Phone: <a href="tel://+234 8065844484">+234-8065844484</a>
-                </span>
-      </div>
+      <div className="flex flex-col md:flex-row gap-y-4 md:gap-x-8">
+  <div className="flex items-center space-x-2">
+    <TiPhone className="text-xl md:text-2xl text-accent" />
+    <span className="text-white">
+      Phone: <a href="tel://+2348065844484">+234-8065844484</a>
+    </span>
+  </div>
 
-      {/* Email */}
-      <div className="flex items-center space-x-2">
-        <HiOutlineMail className="text-2xl text-accent" /> 
-       
-        <span className="text-white">
-                  Email:{" "}
-                  <a href="mailto://petergyang82@gmail.com">petergyang82@gmail.com</a>
-                </span>
-      </div>
-      </div>
-      
+  {/* Email */}
+  <div className="flex items-center space-x-2">
+    <HiOutlineMail className="text-xl md:text-2xl text-accent" />
+    <span className="text-white">
+      Email:{" "}
+      <a href="mailto://petergyang82@gmail.com">petergyang82@gmail.com</a>
+    </span>
+  </div>
+</div>
+
     </div>
             {/* Success and Error messages */}
             {success && (

@@ -153,7 +153,7 @@ const Contact = () => {
             </button>
             <div className="flex flex-col ">
       {/* Phone */}
-      <div className="flex flex-col md:flex-row gap-y-4 md:gap-x-8">
+      <div className="flex flex-col md:flex-row  md:gap-x-8">
   <div className="flex items-center space-x-2">
     <TiPhone className="text-xl md:text-2xl text-accent" />
     <span className="text-white">

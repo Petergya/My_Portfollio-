@@ -5,6 +5,9 @@ import Circles from "/components/Circles";
 import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
+import { TiPhone } from "react-icons/ti"; 
+import { HiOutlineMail } from "react-icons/hi"; 
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -148,25 +151,54 @@ const Contact = () => {
                 className={`translate-y-[120%] opacity-0 group-hover:flex group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]`}
               />
             </button>
+            <div className="flex flex-col space-y-4">
+      {/* Phone */}
+      <div className="flex gap-x-8">
+      <div className="flex items-center space-x-2">
+        <TiPhone className="text-2xl text-accent" /> 
+     
+        <span className="text-white">
+                  Phone: <a href="tel://+234 8065844484">+234-8065844484</a>
+                </span>
+      </div>
+
+      {/* Email */}
+      <div className="flex items-center space-x-2">
+        <HiOutlineMail className="text-2xl text-accent" /> 
+       
+        <span className="text-white">
+                  Email:{" "}
+                  <a href="mailto://petergyang82@gmail.com">petergyang82@gmail.com</a>
+                </span>
+      </div>
+      </div>
+      
+    </div>
             {/* Success and Error messages */}
             {success && (
-              <div className="text-green-500 mt-4">
+              <div className="text-green-500 mt-2">
                 Message sent successfully!
               </div>
             )}
             {error && (
-              <div className="text-red-500 mt-4 flash-fade">
+              <div className="text-red-500 mt-2 flash-fade">
                 Failed to send message. Try again later.
               </div>
             )}
           </motion.form>
         </div>
+        
         <Circles />
       </div>
+     
     </div>
   );
 };
 
 export default Contact;
+
+
+
+
 
 

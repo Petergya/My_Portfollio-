@@ -129,14 +129,23 @@ const Contact = () => {
               onChange={handleChange}
               required
             />
-            <textarea
+            {/* <textarea
               name="message"
               placeholder="Message"
               className="textarea"
               value={formData.message}
               onChange={handleChange}
               required
-            ></textarea>
+            ></textarea> */}
+            <textarea
+  name="message"
+  placeholder="Message"
+  className="textarea h-20" // Adjust the height as needed
+  value={formData.message}
+  onChange={handleChange}
+  required
+></textarea>
+
             <button
               type="submit"
               className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"

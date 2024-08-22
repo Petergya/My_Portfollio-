@@ -30,8 +30,8 @@ const work = () => {
             exit="hidden" 
             className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-            As a software engineer, I develop front-end and mobile apps using React, Next.js, 
-            and React Native, focusing on responsive, secure solutions with API integration and optimization.
+           Front-end and mobile app developer specializing in React, Next.js, React Native, 
+           with a focus on responsive, secure solutions and API optimization.
             </motion.p>
           </div>
           {/* slider */}

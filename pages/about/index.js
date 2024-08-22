@@ -213,9 +213,9 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] h-[340px] "
+          className="flex flex-col w-full xl:max-w-[48%] h-[265px] "
         >
-          <div className="flex gap-x-4 xl:gap-8 mx-auto xl:mx-0 mb-4">
+          <div className="flex gap-x-4 xl:gap-8 mx-auto xl:mx-0 mb-6">
             {aboutData.map((section, sectionIndex) => (
               <div
                 key={sectionIndex}
@@ -230,7 +230,7 @@ const About = () => {
               </div>
             ))}
           </div>
-          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start ">
+          <div className="py-2 xl:py-6 flex flex-col -mt-8 xl:gap-y-4 items-center xl:items-start ">
             {skillsSelected &&
               aboutData[0].info.map((item, itemIndex) => (
                 <div key={itemIndex} className="skill-item">

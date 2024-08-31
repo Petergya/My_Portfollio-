@@ -33,12 +33,12 @@ const aboutData = [
     title: "awards",
     info: [
       {
-        title: "Best Developer Award",
-        stage: "2023",
+        // title: "Best Developer Award",
+        // stage: "2023",
       },
       {
-        title: "Outstanding Contribution",
-        stage: "2022",
+        // title: "Outstanding Contribution",
+        // stage: "2022",
       },
     ],
   },
